@@ -1,11 +1,9 @@
 <template>
-  <ul>
-    <frontend-resource v-for="item in storedResources" :key="item.id"></frontend-resource>
-  </ul>
+  <stored-resources :resources="storedResources"></stored-resources>
 </template>
 
 <script>
-import FrontendResource from './components/frontend-resources/ResourceItem'
+import StoredResources from './components/frontend-resources/StoredResources'
 
 export default {
 
@@ -23,24 +21,41 @@ export default {
            id: 'color-space',
            title: 'Color Space',
            description: 'Create 2 or 3 colors gradient',
-           links: 'https://mycolor.space/'
+           link: 'https://mycolor.space/'
          }
       ]
     }
   },
   components: {
-    FrontendResource,
+    StoredResources,
   }
 }
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
