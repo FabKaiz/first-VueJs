@@ -1,11 +1,14 @@
 <template>
-  <ul></ul>
+  <ul>
+    <frontend-resource v-for="item in storedResources" :key="item.id"></frontend-resource>
+  </ul>
 </template>
 
 <script>
-
+import FrontendResource from './components/frontend-resources/ResourceItem'
 
 export default {
+
   name: 'App',
   data() {
     return {
@@ -19,14 +22,14 @@ export default {
          {
            id: 'color-space',
            title: 'Color Space',
-           description: 'Create 2 or 3 colors gradient'
+           description: 'Create 2 or 3 colors gradient',
            links: 'https://mycolor.space/'
          }
       ]
     }
   },
   components: {
-
+    FrontendResource,
   }
 }
 </script>
