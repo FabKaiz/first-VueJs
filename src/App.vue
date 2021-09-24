@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ul></ul>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
+  data() {
+    return {
+      storedResources: [
+        {
+          id: 'cool-background',
+          title: 'Cool Background',
+          description: 'Create random and original background',
+          link: 'https://coolbackgrounds.io/',
+         },
+         {
+           id: 'color-space',
+           title: 'Color Space',
+           description: 'Create 2 or 3 colors gradient'
+           links: 'https://mycolor.space/'
+         }
+      ]
+    }
+  },
   components: {
-    HelloWorld
+
   }
 }
 </script>
