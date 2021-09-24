@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <template>
   <base-modal v-if="inputIsInvalid" title="Invalid Input" @close="closeModal">
     <template #default>

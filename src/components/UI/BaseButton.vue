@@ -2,7 +2,6 @@
   <button :type="type" :class="mode">
     <slot></slot>
   </button>
-  <!-- <base-button mode="flat"></base-button> -->
 </template>
 
 <script>
@@ -35,11 +34,10 @@
   background-color: transparent;
   color: #089b87;
   border: none;
-  
+
   &:hover,
   &:active {
     background-color: #2fd8c150;
   }
 }
-
 </style>

@@ -16,11 +16,6 @@ import ResourceItem from './ResourceItem.vue'
 
 export default {
   components: { ResourceItem },
-    inject: ['resources'],
-
+  inject: ['resources'],
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

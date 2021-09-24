@@ -1,5 +1,5 @@
 <template>
-<div @click="$emit('close')"></div>
+  <div @click="$emit('close')"></div>
   <dialog open>
     <header>
       <slot name="header">
@@ -18,15 +18,15 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      title: {
-        type: String,
-        required: false,
-      }
+export default {
+  props: {
+    title: {
+      type: String,
+      required: false,
     },
-    emits: ['close']
-  }
+  },
+  emits: ["close"],
+};
 </script>
 
 <style lang="scss" scoped>

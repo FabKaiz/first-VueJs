@@ -29,11 +29,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  h3 { 
-    font-size: 1.3rem;
-    margin: .5rem 0;
+    h3 { 
+      font-size: 1.3rem;
+      margin: .5rem 0;
+    }
   }
 
   p {

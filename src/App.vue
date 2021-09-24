@@ -8,7 +8,6 @@ import TheHeader from './components/layouts/TheHeader'
 import TheResources from './components/frontend-resources/TheResources'
 
 export default {
-
   name: 'App',
   components: {
     TheHeader,
