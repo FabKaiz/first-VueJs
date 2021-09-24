@@ -1,33 +1,18 @@
 <template>
-  <stored-resources :resources="storedResources"></stored-resources>
+  <the-header title="Front End Resource"></the-header>
+  <the-resources></the-resources>
 </template>
 
 <script>
-import StoredResources from './components/frontend-resources/StoredResources'
+import TheHeader from './components/layouts/TheHeader'
+import TheResources from './components/frontend-resources/TheResources'
 
 export default {
 
   name: 'App',
-  data() {
-    return {
-      storedResources: [
-        {
-          id: 'cool-background',
-          title: 'Cool Background',
-          description: 'Create random and original background',
-          link: 'https://coolbackgrounds.io/',
-         },
-         {
-           id: 'color-space',
-           title: 'Color Space',
-           description: 'Create 2 or 3 colors gradient',
-           link: 'https://mycolor.space/'
-         }
-      ]
-    }
-  },
   components: {
-    StoredResources,
+    TheHeader,
+    TheResources,
   }
 }
 </script>
