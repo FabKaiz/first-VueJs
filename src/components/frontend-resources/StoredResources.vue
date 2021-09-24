@@ -2,7 +2,9 @@
   <ul>
     <resource-item
       v-for="item in resources"
-      :key="item.id" :title="item.title"
+      :key="item.id" 
+      :id="item.id"
+      :title="item.title"
       :description="item.description"
       :link="item.link"
     ></resource-item>

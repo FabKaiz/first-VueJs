@@ -50,6 +50,10 @@ import AddResource from './AddResource'
         };
         this.storedResources.unshift(newResource);
         this.selectedTab = 'stored-resources';
+      },
+      removeResource(resourceId) {
+        const resIndex = this.storedResources.findIndex(res => res.id === resourceId);
+        this.storedResources.splice(resIndex, 1);
       }
     },
     components: {
@@ -60,6 +64,7 @@ import AddResource from './AddResource'
       return {
         resources: this.storedResources,
         addResource: this.addResource,
+        deleteResource: this.removeResource,
       }
     },
     computed: {
@@ -68,7 +73,7 @@ import AddResource from './AddResource'
       },
       addResourceBtnMode() {
         return this.selectedTab === 'add-resource' ? null : 'flat';
-      }
+      },
     },
   }
 </script>
